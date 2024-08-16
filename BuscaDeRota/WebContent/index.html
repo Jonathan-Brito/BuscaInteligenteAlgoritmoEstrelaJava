@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="buscar">
+<head>
+<meta charset="UTF-8">
+<title>BUSCA DE ROTAS</title>
+<style>
+#map {
+	height: 800px;
+	width: 100%;
+}
+</style>
+
+<!-- CHAMADA DA BIBLIOTECA DO ANGULARJS -->
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<!-- CHAMADA DO CONTROLLER -->
+<script type="text/javascript" src="js/controller.js"></script>
+</head>
+<body ng-controller="ControllerBuscas">
+
+	<!-- ONDE SERÁ GERADO O MAPS -->
+	<div id="map"></div>
+
+<!-- KEY - DEVE SER GERARA ATRÁVES DO SITE DA API -->
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5aLZ-4FFDY5uduFLxO0OXlhhuGjtOegE&callback=initMap">
+    </script>
+</body>
+</html>
